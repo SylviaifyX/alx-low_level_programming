@@ -21,9 +21,9 @@ int main(void)
 	}
 	while
 	(c <= 'f')
-	c++;
 	{
 	putchar(c);
+	c++;
 	}
 	putchar('\n');
 	return (0);
