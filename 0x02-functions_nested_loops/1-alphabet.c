@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - print alphabelt in lower letters
+ * print_alphabet - print alphabelt in lower letters
  *
  */
 void print_alphabet(void)
