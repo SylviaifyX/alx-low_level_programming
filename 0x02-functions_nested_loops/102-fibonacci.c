@@ -13,7 +13,7 @@ int main(void)
 	while (a < 50)
 	{
 		if (a == 0)
-			printf("%d", b);
+			printf("%ld", b);
 		else if (a == 1)
 			printf(", %ld", c);
 		else
@@ -22,7 +22,7 @@ int main(void)
 			b = c - b;
 			printf(", %ld", c);
 		}
-		a++
+		a++;
 	}
 	printf("\n");
 	return (0);
