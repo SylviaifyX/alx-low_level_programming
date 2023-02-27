@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - updates the value it points to to 98
+ * reset_to_98 - take a pointer to an int
  *
- * @n: variable n
+ * @*n: variable 98
  *
- * Return: 0
+ * Return: null
  */
 void reset_to_98(int *n)
 {
