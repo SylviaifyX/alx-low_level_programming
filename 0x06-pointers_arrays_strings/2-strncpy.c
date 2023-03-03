@@ -1,14 +1,13 @@
 #include "main.h"
-
+#include <string.h>
 /**
- *_strncpy - function that copies a string
- *@dest: store the string copy
- *@src: source string
- *@n: maximum number of byte to copy from src
+ * *_strncpy - Copy at most n characters of string src to dest
+ * @dest: store the string copy
+ * @src: source string
+ * @n: maximum number of byte to copy from src
  *
- * return: a pointer to the resulting string
+ * Return: pointer at the beginning of detination string
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0, src_l = 0;
