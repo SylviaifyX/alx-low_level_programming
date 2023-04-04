@@ -4,7 +4,7 @@
 
 /**
  * add_nodeint - function that adds a new node at the beginning of a list
- *
+ * @head: point the first node
  * @n: add a new node at the beginning
  * Return: new address if successful and NULL if fail
  */
