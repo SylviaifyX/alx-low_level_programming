@@ -2,7 +2,7 @@
 #define List_ Header
 
 
-// data structure of the task//
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
