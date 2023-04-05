@@ -3,7 +3,6 @@
 #include "lists.h"
 
 /**
- *
  * free_listint2 - function that frees a listint_t list
  * @head: point to first node
  * NULL
