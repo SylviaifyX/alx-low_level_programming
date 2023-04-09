@@ -5,6 +5,7 @@
  * flip_bits - function return number to bit flip from one to another
  * @n: number to flipped
  * @m: number to flip to
+ * Return: flip from n to m
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
