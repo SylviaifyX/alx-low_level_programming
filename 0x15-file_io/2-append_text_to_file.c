@@ -3,29 +3,34 @@
 #include "main.h"
 
 /**
- * create_file - function that creates a file.
+ * append_text_to_file - function that appends text at the end of a file.
  * @filename: point to file created
  * @text_content: string to write file
  * Return: 1 success -1 failure
  */
 
-int create_file(const char *filename, char *text_content)
+
+int append_text_to_file(const char *filename, char *text_content)
 {
-	int i = 0, txt;
+	int i, t, txt = 0;
 
 	if (filename == NULL)
+	{
 		return (-1);
+	}
+
 	if (text_content == NULL)
 		text_content = "";
 	while (text_content[i] != '\0')
 		i++;
+	i = open(filename, O_WRONLY | O_APPEND);
+	t = write(i, text_content, txt);
 
-	txt = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-	write(i, text_content, txt);
 	if (i == -1)
+		return (-1);
+	if (t == -1)
 		return (-1);
 
 	close(i);
-
 	return (1);
 }
